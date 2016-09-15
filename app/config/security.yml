@@ -1,0 +1,17 @@
+security:
+
+    providers:
+        joomla:
+            id: joomla.security.user.provider
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt|error)|css|images|js)/
+            security: false
+
+        default:
+            joomla: ~
+            anonymous: ~
+
+    access_control:
+        - { path: ^/administrator/cms/, role: ROLE_ADMIN }

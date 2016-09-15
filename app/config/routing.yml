@@ -1,0 +1,11 @@
+xtain_joomla:
+    resource: "@XTAINJoomlaBundle/Resources/config/routing.yml"
+    prefix:   /
+
+admin:
+    resource: "@SonataAdminBundle/Resources/config/routing/sonata_admin.xml"
+    prefix: /administrator/cms
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
